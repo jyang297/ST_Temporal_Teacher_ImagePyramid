@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+intrain_log/
+model/__pycache__/
+model/.ipynb_checkpoints
+
+pytorch_msssim/
+
+soccer_*
+
+
