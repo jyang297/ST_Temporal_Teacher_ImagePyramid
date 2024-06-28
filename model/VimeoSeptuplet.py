@@ -21,7 +21,14 @@ class VimeoDatasetSep(Dataset):
         self.data_root = data_root
         self.image_root = os.path.join(self.data_root, 'sequences')
         train_fn = os.path.join(self.data_root, 'sep_trainlist.txt')
-        test_fn = os.path.join(self.data_root, 'sep_testlist.txt')
+        # Origin dataset valid
+        # test_fn = os.path.join(self.data_root, 'sep_testlist.txt')
+        # sep_slow_testset subset test
+        test_fn = os.path.join(self.data_root, 'sep_slow_testset.txt')
+        # sep_medium_testset subset test
+        # test_fn = os.path.join(self.data_root, 'sep_medium_testset.txt')
+        # sep_fast_testset
+        # test_fn = os.path.join(self.data_root, 'sep_fast_testset.txt')
         with open(train_fn, 'r') as f:
             self.trainlist = f.read().splitlines()
         with open(test_fn, 'r') as f:
